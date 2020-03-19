@@ -4,16 +4,10 @@ const ANSWERS = {
   theme: "Synthwave '84 (no blur)",
 }
 
-function getBody(key) {
-  if (key) {
-    return ANSWERS[key]
-  }
-
-  return ANSWERS
-}
+const getBody = key => (key ? ANSWERS[key] : ANSWERS)
 
 exports.handler = async event => {
-  const key = event.queryStringParameters.key
+  const { key = '' } = event.queryStringParameters
   const body = getBody(key)
 
   if (body === undefined) {
