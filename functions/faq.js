@@ -19,6 +19,9 @@ exports.handler = async event => {
   if (body === undefined) {
     return {
       statusCode: 404,
+      body: JSON.stringify({
+        error: `An answer for key "${key}" was not found.`,
+      }),
     }
   }
 
