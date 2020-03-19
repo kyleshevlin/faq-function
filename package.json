@@ -1,0 +1,20 @@
+{
+  "name": "faq-function",
+  "private": true,
+  "version": "0.0.1",
+  "description": "People ask me the same questions often. I want to learn Lambda Functions. Why not combine the two?",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kyleshevlin/faq-function.git"
+  },
+  "author": "Kyle Shevlin <kyle.a.shevlin@gmail.com> (https://kyleshevlin.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kyleshevlin/faq-function/issues"
+  },
+  "homepage": "https://github.com/kyleshevlin/faq-function#readme"
+}
