@@ -14,9 +14,16 @@ function getBody(key) {
 
 exports.handler = async event => {
   const key = event.queryStringParameters.key
+  const body = getBody(key)
+
+  if (body === undefined) {
+    return {
+      statusCode: 404,
+    }
+  }
 
   return {
     statusCode: 200,
-    body: JSON.stringify(getBody(key)),
+    body,
   }
 }
