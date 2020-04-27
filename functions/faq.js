@@ -1,7 +1,7 @@
 const ANSWERS = {
   editor: 'VSCode',
   font: 'Dank Mono',
-  theme: "Synthwave '84 (no blur)",
+  theme: "Gloom",
 }
 
 const getAnswer = key => (key ? ANSWERS[key] : ANSWERS)
